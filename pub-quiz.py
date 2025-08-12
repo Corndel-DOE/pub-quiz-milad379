@@ -1,4 +1,4 @@
-# Welcome message for the quiz
+# Welcome message for the quiz improvements
 print("Welcome to the Pub Quiz!")
 
 # List of questions, options, and answers
@@ -22,10 +22,10 @@ for question in quiz_questions:
     print(question["question"])
     for option in question["options"]:
         print(option)
-    
+
     # Get the user's answer
     user_answer = input("Your answer (A, B, C, D): ").strip().upper() # Ensuring the input is uppercase for comparison
-    
+
     # Check if the answer is correct
     if user_answer == question["answer"]:
         print("Correct!")
