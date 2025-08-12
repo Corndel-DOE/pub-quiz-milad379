@@ -1,4 +1,4 @@
-# Welcome message for the quiz improvements
+# Welcome message for the quiz improvement
 print("Welcome to the Pub Quiz!")
 
 # List of questions, options, and answers
