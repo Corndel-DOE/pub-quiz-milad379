@@ -1,4 +1,4 @@
-# Welcome message for the quiz improvement
+# Welcome message for the quiz improvements
 print("Welcome to the Pub Quiz!")
 
 # List of questions, options, and answers
@@ -13,8 +13,16 @@ quiz_questions = [
         "options": ["A) 3", "B) 4", "C) 5", "D) 22"],
         "answer": "B"
     },
+    {
+        "question": "What is 2 * 2?",
+        "options": ["A) 3", "B) 4", "C) 5", "D) 22"],
+        "answer": "B"
+    },
     # Learners can add more questions here following the same structure
 ]
+
+# Score counter
+score = 0
 
 # Loop through each question
 for question in quiz_questions:
@@ -29,8 +37,11 @@ for question in quiz_questions:
     # Check if the answer is correct
     if user_answer == question["answer"]:
         print("Correct!")
+        score += 1  # Increment the score for a correct answer
     else:
         print(f"Wrong! The correct answer was {question['answer']}.")
 
+
 # Goodbye message
 print("Thanks for playing the Pub Quiz!")
+print(f"Your final score is: {score}/{len(quiz_questions)}")
